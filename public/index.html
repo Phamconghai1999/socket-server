@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Demo Socketio - Homepage</title>
+    <script src="socket.io/socket.io.js"></script>
+
+    <script>
+        var socket = io("https://localhost:3000");
+        socket.on("connect", () => {
+            // either with send()
+            socket.send("Client connected");
+        });
+    </script>
+</head>
+
+<body>
+    <p>Page from Server</p>
+</body>
+
+</html>
