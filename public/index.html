@@ -5,7 +5,7 @@
     <script src="socket.io/socket.io.js"></script>
 
     <script>
-        var socket = io("https://localhost:3000");
+        var socket = io("https://aniwebsocket.herokuapp.com/");
         socket.on("connect", () => {
             // either with send()
             socket.send("Client connected");
